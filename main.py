@@ -9,20 +9,12 @@ screen.setup(width=600, height=600)
 screen.title("Turtle Crossing Game")
 screen.tracer(0)
 
-
 player = Player()
 car_manager = CarManager()
 scoreboard = Scoreboard()
 
-
-
 screen.listen()
 screen.onkey(player.move, "w")
-
-
-
-
-
 
 game_is_on = True
 while game_is_on:
@@ -41,17 +33,5 @@ while game_is_on:
         scoreboard.level_up()
         player.reset_position()
         car_manager.move_speed()
-
-
-
-
-
-
-
-
-
-
-
-
 
 screen.exitonclick()
